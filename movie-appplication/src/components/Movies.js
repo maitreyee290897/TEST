@@ -19,8 +19,7 @@ export default class Movies extends React.Component {
         console.log(movieList)
     }
     componentDidMount(){
-        console.log("component is mounted on the dom ");//life cycle method-where data from backend should be handled .
-                                                        //it is called when obj is loaded.
+        console.log("component is mounted on the dom ");
 
      axios.get('http://localhost:8000/api/movies').then(res=>{
                this.setState({movieList:res.data.data})})

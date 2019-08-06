@@ -12,13 +12,11 @@ export default class MovieDetails extends React.Component{
     }
     componentDidMount(){
         let id = this.props.match.params.id;
-        //let id1=parseInt(id)
         console.log(id);
         Axios.get('http://localhost:8000/api/movies/'+id).then(res=>{
             this.setState({movie:res.data.data[0],
             stars:res.data.data[0].Stars})
         })
-      //  console.log(this.state.user)
     }
     render(){
         console.log(this.state.movie.Stars)

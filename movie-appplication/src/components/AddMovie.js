@@ -11,12 +11,10 @@ export default class DeleteMovie extends React.Component{
     }
     componentDidMount(){
         let id = this.props.match.params.id;
-        //let id1=parseInt(id)
         console.log(id);
         Axios.delete('http://localhost:8000/api/movies/'+id).then(res=>{
             this.setState({movie:res.data.data[0]})
         })
-      //  console.log(this.state.user)
     }
     render(){
         console.log(this.state.movie)

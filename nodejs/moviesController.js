@@ -29,20 +29,6 @@ exports.listAll = function(req,res){
         });
         }
     });
-    
-//     res.json([{
-//         id:1,
-//         name:'Kal Ho Na Ho'
-//     },
-//     {
-//         id:2,
-//         name:'Kuch Kuch Hota Hai'
-//     },
-//     {
-//         id:1,
-//         name:'Interstellar'
-//     }
-// ]);
 };
 
 exports.findById = function(req,res){
@@ -60,10 +46,7 @@ exports.findById = function(req,res){
             }
             
     });
-    // res.json({
-    //     id:1,
-    //     name:'Kal Ho Na Ho'
-    // });
+
 }
 
 exports.delete = function(req,res){

@@ -5,13 +5,8 @@ export default class Card extends Component {
 
     constructor(){
         super();
-        
-        // this.details = this.details.bind(this);
+
     }
-    // details(){
-    //     console.log(this);
-    //     console.log('Came inside the click event handler');
-    // }
     render(){
         return  (
             <div className="card" style={{width: 18 +'rem'}}>
